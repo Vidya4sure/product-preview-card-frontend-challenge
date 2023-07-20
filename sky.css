@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-/*whole viewport of the website*/
+/*whole viewport(means cover whole website) of the website*/
 #container {
     background-color: hsl(30, 38%, 92%);
     height: 100vh;
@@ -12,27 +12,27 @@
     align-items: center;
 }
 
-/*container or main container */
+/*container or main container in which photo's and text stored */
 #small-container {
-    background-color: hsl(0, 0%, 100%) ;
     width: 700px;
     height: 500px;
+    background-image: url(assets/image-product-desktop.jpg);
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-color: hsl(0, 0%, 100%) ;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
 }
 
-
 /*items of the container from here */
-
-
+/*I later understand that I don't need to used this */
 #image-one {
-    background-image: url(assets/image-product-desktop.jpg);
-    background-size: cover;
     width: 350px;
     height: 500px;
 }
+
 
 
 /*typhography and heading and part is from now on*/
@@ -43,7 +43,65 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: space-evenly;
     align-items: center;
-    gap: 50px;
 }
+
+/*Perfume part top section*/
+header {
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 5px;
+    width: 260px;
+    opacity: 0.5;
+}
+
+/*Middle heading for perfume*/
+
+h1 {
+    /* font-family: 'Montserrat', sans-serif;
+    font-family: 'Outfit', sans-serif; */
+    color: hsl(212, 21%, 14%);
+    font-size: 42px;
+    width: 270px;
+}
+
+#price {
+    color:hsl(158, 36%, 37%) ;
+    font-size: 40px;
+}
+
+#cut-price{
+    font-size: small;
+    color: black;
+    opacity: 0.5;
+    text-decoration: line-through;
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 20px;
+    left: 20px;
+    bottom: 10px;
+}
+
+#paragraph {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    opacity: 0.5;
+    width: 270px;
+    /* height: 60px; */
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    background-color: hsl(158, 33%, 32%);
+    font-size: 15px;
+    width: 270px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+
